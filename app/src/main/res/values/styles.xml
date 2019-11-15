@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+        <item name="android:titleTextColor">#fff</item>
+
+    </style>
+
+
+    <style name="MyToolbarTheme" parent="Theme.AppCompat">
+        <!-- Used to tint the back arrow, menu and spinner arrow -->
+        <item name="colorControlNormal">#FFF</item>
+        <item name="android:actionMenuTextColor">@color/colorWhite</item>
+        <item name="android:titleTextColor">#fff</item>
+
+    </style>
+
+</resources>

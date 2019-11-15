@@ -1,0 +1,62 @@
+       GuestDatabaseHelper guestDatabaseHelper = new GuestDatabaseHelper(this);
+        try {
+            db = guestDatabaseHelper.getReadableDatabase();
+            // db.execSQL("DROP TABLE CONTACTS");
+
+            cursor = db.query("GUESTS", new String[]{"NAME", "SURNAME", "GENDER", "WHO",
+                    "TYPE", "SRC"}, null, null, null, null, null);
+            String name, surname, gender, who;
+            int type, src;
+            DataItem dataItem;
+
+            data = new ArrayList<>();
+
+            if (cursor.moveToFirst()) {
+                name = cursor.getString(0);
+                surname = cursor.getString(1);
+                gender = cursor.getString(2);
+                who = cursor.getString(3);
+                type = cursor.getInt(4);
+                src = cursor.getInt(5);
+                dataItem = new DataItem(name, surname, gender, who, type, src);
+                data.add(dataItem);
+            }
+            while (cursor.moveToNext()) {
+                name = cursor.getString(0);
+                surname = cursor.getString(1);
+                gender = cursor.getString(2);
+                who = cursor.getString(3);
+                type = cursor.getInt(4);
+                src = cursor.getInt(5);
+                dataItem = new DataItem(name, surname, gender, who, type, src);
+                data.add(dataItem);
+            }
+        } catch (SQLException e) {
+            Toast.makeText(this, "DB недоступна", Toast.LENGTH_SHORT).show();
+        }
+
+
+
+
+ @Override
+    public boolean onMenuItemClick(MenuItem item) {
+
+        switch (item.getItemId()) {
+            case R.id.action_edit:
+                FragmentForEditContact fragment = new FragmentForEditContact();
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.setCustomAnimations(R.anim.go_up,
+                        R.anim.go_down);
+                fragmentTransaction.add(R.id.fragment_main_container, fragment);
+                // fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+                fragment.setDataItem(data.get(adapter.selected_position));
+                fragment.setPosition(adapter.selected_position);
+                TextView textView = findViewById(R.id.info_text_2);
+                textView.setText("Контакт " + adapter.selected_position + " (" + data.get(adapter.selected_position).surname + ") : редактирование");
+
+                return true;
+        }
+        return false;
+    }

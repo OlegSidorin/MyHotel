@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".FragmentForEditGuestInfo">
+
+    <ScrollView
+        android:id="@+id/idScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/titleGuestInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Бронирование: "
+                android:textColor="@color/colorAccent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.33"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="code"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintBottom_toBottomOf="@+id/titleGuestInfo"
+                app:layout_constraintStart_toEndOf="@+id/titleGuestInfo"
+                tools:text="code" />
+
+            <TextView
+                android:id="@+id/titleRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Комната:"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintStart_toStartOf="@+id/titleGuestInfo"
+                app:layout_constraintTop_toBottomOf="@+id/titleGuestInfo" />
+
+            <EditText
+                android:id="@+id/idRoom"
+                android:layout_width="102dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="16dp"
+                android:ems="10"
+                android:hint="Room"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/titleRoom"
+                app:layout_constraintStart_toEndOf="@+id/titleRoom"
+                app:layout_constraintTop_toTopOf="@+id/titleRoom" />
+
+            <EditText
+                android:id="@+id/inputSecondName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:ems="10"
+                android:hint="@string/surname"
+                android:inputType="textPersonName"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/titleRoom"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/inputFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/inputSecondName"
+                app:layout_constraintTop_toBottomOf="@+id/inputSecondName" />
+
+            <EditText
+                android:id="@+id/inputPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="@string/phone"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/inputFirstName"
+                app:layout_constraintTop_toBottomOf="@+id/inputFirstName" />
+
+            <TextView
+                android:id="@+id/title_arrival"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Дата заезда:"
+                app:layout_constraintStart_toStartOf="@+id/inputPhoneNumber"
+                app:layout_constraintTop_toBottomOf="@+id/inputPhoneNumber" />
+
+            <TextView
+                android:id="@+id/tv_date_check_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Указать"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/title_arrival"
+                app:layout_constraintStart_toEndOf="@+id/title_arrival" />
+
+            <TextView
+                android:id="@+id/titleDeparture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Дата выезда:"
+                app:layout_constraintStart_toStartOf="@+id/title_arrival"
+                app:layout_constraintTop_toBottomOf="@+id/title_arrival" />
+
+            <TextView
+                android:id="@+id/tv_date_check_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Указать"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/titleDeparture"
+                app:layout_constraintStart_toStartOf="@+id/tv_date_check_in" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="32dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/titleDeparture">
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="1"
+                    android:background="#4CAF50"
+                    android:text="Сохранить"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_del"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="1"
+                    android:background="#E91E63"
+                    android:text="Удалить"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

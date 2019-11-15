@@ -1,0 +1,194 @@
+<resources>
+    <string name="app_name">MyHotel</string>
+    <string name="name">Имя</string>
+    <string name="surname">Фамилия</string>
+    <string name="patronymic">Отчество</string>
+    <string name="action_home">Home</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_del">Delete</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bottom_text_one">Всего:</string>
+    <string name="bottom_text_two">1</string>
+    <string name="phone">Phone</string>
+    <string-array name="code">
+        <item>W010819</item>
+        <item>V310719</item>
+        <item>S310719</item>
+        <item>9310719</item>
+        <item>X310719</item>
+        <item>C00719</item>
+        <item>K100719</item>
+        <item>N300719</item>
+        <item>T140719</item>
+        <item>4030819</item>
+        <item>F021019</item>
+        <item>H021017</item>
+        <item>S031017</item>
+    </string-array>
+    <string-array name="name">
+        <item>Анюта</item>
+        <item>Инна</item>
+        <item>Ольга</item>
+        <item>Иван</item>
+        <item>Елизавета</item>
+        <item>Иван</item>
+        <item>Руслан</item>
+        <item>Герман</item>
+        <item>Илья</item>
+        <item>Елена</item>
+        <item>Ванятка</item>
+        <item>Вовандос</item>
+        <item>Джованио</item>
+    </string-array>
+    <string-array name="surname">
+        <item>Николаева</item>
+        <item>Никишаева</item>
+        <item>Левченко</item>
+        <item>Гурин</item>
+        <item>Волкова</item>
+        <item>Сорокин</item>
+        <item>Шамсков</item>
+        <item>Кио</item>
+        <item>Панфилов</item>
+        <item>Смирнова</item>
+        <item>Мишкин</item>
+        <item>Гришкин</item>
+        <item>Кормушкин</item>
+    </string-array>
+    <string-array name="patronymic">
+        <item></item>
+        <item></item>
+        <item>Викторовна</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name="phone">
+        <item>89266450970</item>
+        <item>89234464628</item>
+        <item>89081316190</item>
+        <item></item>
+        <item>89022853322</item>
+        <item>89171561400</item>
+        <item>89165133208</item>
+        <item>89187519940</item>
+        <item>89254668306</item>
+        <item>89854214217</item>
+        <item>89854214217</item>
+        <item>89854214217</item>
+        <item>89854214217</item>
+    </string-array>
+    <string-array name="check_in_year">
+        <item>2019</item>
+        <item>2019</item>
+        <item>2019</item>
+        <item>2019</item>
+        <item>2019</item>
+        <item>2019</item>
+        <item>2019</item>
+        <item>2019</item>
+        <item>2019</item>
+        <item>2019</item>
+        <item>2019</item>
+        <item>2019</item>
+        <item>2019</item>
+    </string-array>
+    <string-array name="check_in_month">
+        <item>08</item>
+        <item>08</item>
+        <item>08</item>
+        <item>07</item>
+        <item>10</item>
+        <item>08</item>
+        <item>07</item>
+        <item>08</item>
+        <item>07</item>
+        <item>08</item>
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="check_in_day">
+        <item>01</item>
+        <item>01</item>
+        <item>02</item>
+        <item>31</item>
+        <item>11</item>
+        <item>03</item>
+        <item>09</item>
+        <item>02</item>
+        <item>14</item>
+        <item>03</item>
+        <item>14</item>
+        <item>18</item>
+        <item>19</item>
+    </string-array>
+    <string-array name="check_out_year">
+        <item>2019</item>
+        <item>2019</item>
+        <item>2019</item>
+        <item>2019</item>
+        <item>2019</item>
+        <item>2019</item>
+        <item>2019</item>
+        <item>2019</item>
+        <item>2019</item>
+        <item>2019</item>
+        <item>2019</item>
+        <item>2019</item>
+        <item>2019</item>
+    </string-array>
+    <string-array name="check_out_month">
+        <item>10</item>
+        <item>08</item>
+        <item>08</item>
+        <item>08</item>
+        <item>11</item>
+        <item>08</item>
+        <item>08</item>
+        <item>08</item>
+        <item>07</item>
+        <item>08</item>
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="check_out_day">
+        <item>11</item>
+        <item>14</item>
+        <item>08</item>
+        <item>22</item>
+        <item>03</item>
+        <item>10</item>
+        <item>02</item>
+        <item>05</item>
+        <item>16</item>
+        <item>04</item>
+        <item>18</item>
+        <item>20</item>
+        <item>21</item>
+    </string-array>
+    <string-array name="room">
+        <item>W03</item>
+        <item>W07</item>
+        <item>W04</item>
+        <item>M03</item>
+        <item>W04</item>
+        <item>M02</item>
+        <item>M03</item>
+        <item>M08</item>
+        <item>W02</item>
+        <item>W04</item>
+        <item>M04</item>
+        <item>M05</item>
+        <item>M01</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>
